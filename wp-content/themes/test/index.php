@@ -9,7 +9,7 @@
                     <img src="..." class="card-img-top" alt="Card image cap">
                     <div class="card-body">
                         <a href="<?php the_permalink();?>"><h5 class="card-title"><?php the_title(); ?></h5></a>
-                        <p class="card-text"><?php the_content(""); ?></p>
+                        <p class="card-text"><?php the_excerpt(); ?></p>
                         <a href="<?php the_permalink();?>" class="btn btn-primary">Go somewhere</a>
                     </div>
                 </div>
