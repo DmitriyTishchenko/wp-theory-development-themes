@@ -23,5 +23,12 @@ function delete_intermediate_image_sizes( $sizes ){
     // размеры которые нужно удалить
     return array_diff( $sizes, array(
         'medium_large',
+        'large',
     ) );
 }*/
+
+function test_setup(){
+    add_theme_support('post-thumbnails');
+    add_image_size( 'my-thumb', 100, 100 );
+}
+add_action( 'after_setup_theme', 'test_setup' );
