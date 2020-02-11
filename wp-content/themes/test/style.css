@@ -14,3 +14,59 @@ img{
     max-width: 100%;
     height: auto;
 }
+
+ul.page-numbers {
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    border-radius: .25rem;
+    justify-content: center !important;
+}
+
+ul.page-numbers li:first-child a.prev.page-numbers{
+    margin-left: 0;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+
+ul.page-numbers li:last-child a.next.page-numbers {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
+
+ul.page-numbers li:not(:disabled) :not(.disabled){
+    cursor: pointer;
+}
+
+a.page-numbers, span.current{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+span.current {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+    cursor: default;
+}
+
+span.dots{
+    position: relative;
+    display: block;
+    padding: .5rem .75rem;
+    margin-left: -1px;
+    line-height: 1.25;
+    color: #007bff;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+nav.navigation{
+    width: 100%;
+}
