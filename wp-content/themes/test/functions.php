@@ -31,6 +31,10 @@ function test_setup(){
     add_theme_support('post-thumbnails');
     add_image_size( 'my-thumb', 100, 100 );
     add_theme_support( 'title-tag' );
+    register_nav_menus( [
+        'header_menu1' => 'Меню в шапке 1',
+        'footer_menu2' => 'Меню в футере 2'
+    ] );
 }
 add_action( 'after_setup_theme', 'test_setup' );
 
