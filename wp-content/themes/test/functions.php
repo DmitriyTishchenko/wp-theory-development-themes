@@ -1,4 +1,7 @@
 <?php
+
+require_once __DIR__ . '/Test_Menu.php';
+
 /*
  * подключение скриптов и стилей
  */
