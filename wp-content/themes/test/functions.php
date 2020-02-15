@@ -30,6 +30,7 @@ function delete_intermediate_image_sizes( $sizes ){
 function test_setup(){
     add_theme_support('post-thumbnails');
     add_image_size( 'my-thumb', 100, 100 );
+    add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'test_setup' );
 
