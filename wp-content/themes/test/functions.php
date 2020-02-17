@@ -34,6 +34,14 @@ function test_setup(){
     add_theme_support('post-thumbnails');
     add_image_size( 'my-thumb', 100, 100 );
     add_theme_support( 'title-tag' );
+    add_theme_support('custom-logo', array(
+        'width' => '150',
+        'height' => '40',
+    ));
+    add_theme_support('custom-background', array(
+        'default-color' => 'ffffff',
+        'default-image' => get_template_directory_uri() . '/assets/image/background.png',
+    ));
     register_nav_menus( [
         'header_menu1' => 'Меню в шапке 1',
         'footer_menu2' => 'Меню в футере 2'
