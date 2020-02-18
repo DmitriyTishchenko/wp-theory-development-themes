@@ -42,6 +42,13 @@ function test_setup(){
         'default-color' => 'ffffff',
         'default-image' => get_template_directory_uri() . '/assets/image/background.png',
     ));
+
+    add_theme_support('custom-header', array(
+        'default-image' => get_template_directory_uri() . '/assets/image/coffee.jpg',
+        'width' => '2000',
+        'height' => '1300',
+    ));
+
     register_nav_menus( [
         'header_menu1' => 'Меню в шапке 1',
         'footer_menu2' => 'Меню в футере 2'
